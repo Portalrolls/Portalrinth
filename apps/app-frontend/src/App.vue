@@ -1,7 +1,6 @@
 <script setup>
 import '@/helpers/ai-launcher-tools'
 import '@/helpers/ai-portalus-tools'
-import '@/helpers/ai-super-tools'
 
 import { ModrinthApiError } from '@modrinth/api-client'
 import {
@@ -20,8 +19,6 @@ import {
         PlusIcon,
         RefreshCwIcon,
         ReportIcon,
-        MessagesSquareIcon,
-        NewspaperIcon,
         ServerIcon,
         SettingsIcon,
         ShirtIcon,
@@ -782,14 +779,6 @@ const messages = defineMessages({
         ai: {
                 id: 'app.nav.ai',
                 defaultMessage: 'AI assistant',
-        },
-        news: {
-                id: 'app.nav.news',
-                defaultMessage: 'News',
-        },
-        messenger: {
-                id: 'app.nav.messenger',
-                defaultMessage: 'MC Messenger',
         },
         hostingTab: {
                 id: 'app.nav.modrinth-hosting',
@@ -2834,22 +2823,6 @@ provideAppUpdateDownloadProgress(appUpdateDownload)
                                 :is-primary="(r) => r.path === '/ai'"
                         >
                                 <SparklesIcon />
-                        </NavButton>
-                        <NavButton
-                                v-tooltip.right="formatMessage(messages.news)"
-                                to="/news"
-                                :is-primary="(r) => r.path === '/news'"
-                                :is-subpage="(r) => r.path.startsWith('/news')"
-                        >
-                                <NewspaperIcon />
-                        </NavButton>
-                        <NavButton
-                                v-tooltip.right="formatMessage(messages.messenger)"
-                                to="/messenger"
-                                :is-primary="(r) => r.path === '/messenger'"
-                                :is-subpage="(r) => r.path.startsWith('/messenger')"
-                        >
-                                <MessagesSquareIcon />
                         </NavButton>
                         <NavButton
                                 v-tooltip.right="formatMessage(messages.hostingTab)"

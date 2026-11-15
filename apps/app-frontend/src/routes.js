@@ -22,16 +22,6 @@ export default new createRouter({
 			component: () => import('@/pages/Ai.vue'),
 		},
 		{
-			path: '/news',
-			name: 'News',
-			component: () => import('@/pages/News.vue'),
-		},
-		{
-			path: '/messenger',
-			name: 'MC Messenger',
-			component: () => import('@/pages/Messenger.vue'),
-		},
-		{
 			path: '/hosting/manage/',
 			name: 'Servers',
 			component: () => import('@/pages/Servers.vue'),
