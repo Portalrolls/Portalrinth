@@ -2144,6 +2144,12 @@
 	"app.appearance-settings.font.custom.none": {
 		"message": "No installed font is called that"
 	},
+	"app.appearance-settings.loop-animation.title": {
+		"message": "Loop Animation"
+	},
+	"app.appearance-settings.loop-animation.description": {
+		"message": "The button or link under the cursor grows a little while its neighbours on the same bar or panel step back."
+	},
 	"app.settings.ai-assistant.enabled": {
 		"message": "Enable AI assistant"
 	},

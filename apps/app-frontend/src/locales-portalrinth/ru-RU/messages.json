@@ -4848,6 +4848,12 @@
 	"app.appearance-settings.accent.sunset": {
 		"message": "Закат"
 	},
+	"app.appearance-settings.loop-animation.title": {
+		"message": "Анимация «Петля»"
+	},
+	"app.appearance-settings.loop-animation.description": {
+		"message": "Кнопка или ссылка под курсором чуть увеличивается, а соседние на той же панели или баре отходят назад."
+	},
 	"app.clock.action-close": {
 		"message": "Закрыть игру"
 	},
